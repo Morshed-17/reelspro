@@ -25,7 +25,6 @@ export async function connectToDatabase() {
       .connect(MONGODB_URI, opts)
       .then(() => mongoose.connection);
   }
-  
 
   try {
     cached.conn = await cached.promise;
